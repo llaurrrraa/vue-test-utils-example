@@ -36,8 +36,10 @@ export default {
   <CountList />
   <AddCount />
   <InputBar />
-  <Combination :thousand="21821671" @Combination="setNun" />
-  <h1>{{ num }}</h1>
+  <div style="border: 2px solid blueviolet; margin: 2rem; padding: 2rem;border-radius: 1rem">
+    <Combination :thousand="21821671" @Combination="setNun" />
+    <h1>{{ num }}</h1>
+  </div>
   <BoxData />
   <ContentBox />
 </template>

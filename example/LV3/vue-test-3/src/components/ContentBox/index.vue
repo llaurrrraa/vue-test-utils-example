@@ -21,7 +21,9 @@ export default {
 </script>
 
 <template>
-  <div v-show="props.isOpen" class="box"></div>
+  <div style="border: 2px solid blueviolet; margin: 2rem; padding: 2rem; border-radius: 1rem;">
+    <div v-show="props.isOpen" class="box"></div>
+  </div>
 </template>
 
 <style scoped>

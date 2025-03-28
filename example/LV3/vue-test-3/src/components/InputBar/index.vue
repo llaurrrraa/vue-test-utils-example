@@ -20,26 +20,29 @@ export default {
 };
 </script>
 <template>
-  <ul>
-    <li>
-      name:
-      <input class="name" type="text" placeholder="輸入名字" />
-    </li>
-    <li>
-      email:
-      <input class="email" type="text" placeholder="輸入email" />
-    </li>
-    <li>
-      num
-      <input class="num" type="text" :value="num" disabled />
-    </li>
-  </ul>
+  <div style="border: 2px solid coral; margin: 2rem; padding: 2rem;border-radius: 1rem">
+    <ul>
+      <li>
+        name:
+        <input class="name" type="text" placeholder="輸入名字" />
+      </li>
+      <li>
+        email:
+        <input class="email" type="text" placeholder="輸入email" />
+      </li>
+      <li>
+        num
+        <input class="num" type="text" :value="num" disabled />
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
 ul {
   display: block;
   margin-bottom: 20px;
+  list-style-type: none;
 }
 li {
   margin-bottom: 10px;

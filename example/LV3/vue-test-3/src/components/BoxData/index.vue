@@ -10,7 +10,9 @@ export default {
 </script>
 
 <template>
-  <div v-show="isOpen" class="box_data"></div>
+  <div style="border: 2px solid coral; margin: 2rem; padding: 2rem;border-radius: 1rem">
+    <div v-show="isOpen" class="box_data"></div>
+  </div>
 </template>
 
 <style scoped>
