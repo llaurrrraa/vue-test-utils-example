@@ -3,8 +3,10 @@ import InputBar from "@/components/InputBar";
 import { nextTick, ref } from "vue";
 
 describe("InputBar.vue", () => {
-  it("input set Value", async () => {
+  it("input set Value", () => {
     const wrapper = mount(InputBar);
+    wrapper.find('input.name').setValue('Laura');
+    expect(wrapper.find('input.name').element.value).toBe('Laura');
     // await wrapper.find("input.name").setValue("Mike");
     // expect(wrapper.find("input.name").element.value).toBe("Mike");
     // await wrapper.find("input.email").setValue("1208966@gmail.com");
